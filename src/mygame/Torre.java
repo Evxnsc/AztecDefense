@@ -151,8 +151,8 @@ public class Torre {
             System.out.println("Mejora 1: +20 daño, +10 rango");
             return true;
         } else if (nivel == 2 && nivelMejora == 1) {
-            this.dano += 10f;
-            this.rango += 2f;
+            this.dano += 2f;
+            this.rango += 1f;
             nivelMejora = 2;
             System.out.println("Mejora 2: +20 daño, +10 rango");
             return true;

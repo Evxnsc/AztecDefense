@@ -110,7 +110,7 @@ public class ControladorJugador extends BaseAppState {
                     }
 
                     if (seleccionado == null) {
-                        System.out.println("❌ Solo se hizo clic en el cielo. Ignorado.");
+                        System.out.println("Solo se hizo clic en el cielo. Ignorado.");
                         return;
                     }
 
@@ -120,7 +120,7 @@ public class ControladorJugador extends BaseAppState {
                     Spatial torreSeleccionadaNodo = seleccionado;
                     while (torreSeleccionadaNodo != null) {
                         String nombre = torreSeleccionadaNodo.getName();
-                        System.out.println("🔍 Explorando nodo: " + nombre);
+                        System.out.println("Explorando nodo: " + nombre);
                         if (nombre != null && nombre.startsWith("Torre")) {
                             break;
                         }
@@ -166,14 +166,14 @@ public class ControladorJugador extends BaseAppState {
             if (name.equals("Mejorar1")) {
                 System.out.println("Tecla presionada: " + name);
                 if (torreSeleccionada == null) {
-                    System.out.println("⚠️ No hay torre seleccionada.");
+                    System.out.println("No hay torre seleccionada.");
                 } else {
                     System.out.println("Intentando aplicar mejora 1...");
                     if (gameWorld.getMonedas() >= 5 && torreSeleccionada.aplicarMejora(1)) {
                         gameWorld.restarMonedas(5);
-                        System.out.println("✅ Mejora 1 aplicada.");
+                        System.out.println("Mejora 1 aplicada.");
                     } else {
-                        System.out.println("❌ No se puede aplicar mejora 1.");
+                        System.out.println("No se puede aplicar mejora 1.");
                     }
                 }
             }
@@ -181,14 +181,14 @@ public class ControladorJugador extends BaseAppState {
             if (name.equals("Mejorar2")) {
                 System.out.println("Tecla presionada: " + name);
                 if (torreSeleccionada == null) {
-                    System.out.println("⚠️ No hay torre seleccionada.");
+                    System.out.println("No hay torre seleccionada.");
                 } else {
                     System.out.println("Intentando aplicar mejora 2...");
                     if (gameWorld.getMonedas() >= 7 && torreSeleccionada.aplicarMejora(2)) {
                         gameWorld.restarMonedas(7);
-                        System.out.println("✅ Mejora 2 aplicada.");
+                        System.out.println("Mejora 2 aplicada.");
                     } else {
-                        System.out.println("❌ No se puede aplicar mejora 2.");
+                        System.out.println("No se puede aplicar mejora 2.");
                     }
                 }
             }
