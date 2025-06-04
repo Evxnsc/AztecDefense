@@ -13,7 +13,6 @@ import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Box;
 import java.util.UUID;
 
-
 public class Torre {
     private Vector3f posicion;
     private float rango;

@@ -84,7 +84,6 @@ public class ControladorJugador extends BaseAppState {
                 Vector3f dir = cam.getWorldCoordinates(inputManager.getCursorPosition(), 1f)
                                    .subtractLocal(click3d).normalizeLocal();
                 
-                
                 CollisionResults results = new CollisionResults();
                 Ray ray = new Ray(click3d, dir);
                 if (modoColocacion) {
